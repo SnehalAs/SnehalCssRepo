@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check if S2 is the First Part of S1</title>
+</head>
+<body>
+    <h2>Check if S2 is the First Part of S1</h2>
+    <input type="text" id="string1Input" placeholder="Enter the first string">
+    <input type="text" id="string2Input" placeholder="Enter the second string">
+    <button onclick="checkFirstPart()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkFirstPart() {
+            var S1 = document.getElementById("string1Input").value.toLowerCase();
+            var S2 = document.getElementById("string2Input").value.toLowerCase();
+
+            var firstPartS1 = S1.substring(0, S2.length);
+
+            var result = firstPartS1 === S2;
+            
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

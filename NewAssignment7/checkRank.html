@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check the rank R
+function checkRank(R) {
+  if (R <= 3) {
+    console.log("One of Top 3");
+  } else if (R <= 10) {
+    console.log("Not Top 3 but One of Top 10");
+  }
+}
+
+// Read the rank R
+const R = parseInt(prompt("Enter the student's rank (R): "));
+
+// Call the function to check and print the result
+checkRank(R);
+
+    </script>
+</body>
+</html>

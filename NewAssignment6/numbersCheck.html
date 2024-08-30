@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Numbers Greater than 100</title>
+</head>
+<body>
+    <h2>Check Numbers Greater than 100</h2>
+    <label for="numberA">Enter number A:</label>
+    <input type="number" id="numberA" placeholder="Enter number A">
+    <br><br>
+    <label for="numberB">Enter number B:</label>
+    <input type="number" id="numberB" placeholder="Enter number B">
+    <br><br>
+    <label for="numberC">Enter number C:</label>
+    <input type="number" id="numberC" placeholder="Enter number C">
+    <br><br>
+    <button onclick="checkNumbers()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkNumbers() {
+            var A = parseFloat(document.getElementById("numberA").value);
+            var B = parseFloat(document.getElementById("numberB").value);
+            var C = parseFloat(document.getElementById("numberC").value);
+            
+            if (A > 100 && B > 100 && C > 100) {
+                document.getElementById("result").innerText = "All are greater than 100";
+            } else {
+                document.getElementById("result").innerText = "Not all are greater than 100";
+            }
+        }
+    </script>
+</body>
+</html>

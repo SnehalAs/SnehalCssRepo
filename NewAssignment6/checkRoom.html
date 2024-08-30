@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Room Number</title>
+</head>
+<body>
+    <h2>Check Room Number</h2>
+    <label for="roomNumber">Enter room number:</label>
+    <input type="text" id="roomNumber" placeholder="Enter room number">
+    <br><br>
+    <button onclick="checkRoom()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkRoom() {
+            var roomInput = document.getElementById("roomNumber").value.trim();
+            
+            // Extracting the number from roomInput assuming the format "R<number>"
+            var roomNumber = parseInt(roomInput.substring(1));
+            
+            if (!isNaN(roomNumber) && roomNumber < 30) {
+                document.getElementById("result").innerText = "Ground Floor";
+            } else {
+                document.getElementById("result").innerText = "Not Ground Floor";
+            }
+        }
+    </script>
+</body>
+</html>

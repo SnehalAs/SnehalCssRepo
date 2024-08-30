@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 400px;
+            background-color: aqua;
+            animation-name: Snehal;
+            animation-duration: 8s;
+            position: relative;
+            /* animation-delay: 4s; */
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes Snehal{
+            /* from{
+                background-color: aqua;
+            }
+            to{
+                background-color: pink;
+            } */
+            0%{
+                background-color: aquamarine;
+                left: 200px;
+            }
+            40%{
+                background-color: crimson;
+                left: 400px;
+            }
+            60%{
+                background-color: cornflowerblue;
+                left: 600px;
+            }
+            80%{
+                background-color: blueviolet;
+                left: 700px;
+            }
+            100%{
+                background-color: darkcyan;
+                left: 900px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Animation
+        @Keyframe
+        Animation duration
+        Animation-iteration-count
+        Animation -direction
+        Animation-timing-function
+     -->
+     <h1>topic:- Animation</h1>
+     <div class="box">
+       <h1 style="text-align: center; color: white;">Snehal Love Apurv</h1>
+     </div>
+</body>
+</html>

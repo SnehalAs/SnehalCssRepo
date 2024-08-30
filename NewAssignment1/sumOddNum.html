@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to calculate the sum of odd numbers from 1 to N
+function sumOddNumbers(N) {
+    let sum = 0;
+    for (let i = 1; i <= N; i++) {
+        if (i % 2 !== 0) {
+            sum += i;
+        }
+    }
+    console.log(sum);
+}
+
+// Read the input number N
+let N = 7; // You can change this value to test with different inputs
+
+// Call the function to calculate and print the sum of odd numbers
+sumOddNumbers(N);
+
+    </script>
+</body>
+</html>

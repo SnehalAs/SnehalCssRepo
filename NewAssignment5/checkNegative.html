@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Negative Number Check</title>
+</head>
+<body>
+    <h2>Check if a Number is Negative</h2>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="checkNegative()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkNegative() {
+            var number = document.getElementById("numberInput").value;
+            var result = number < 0;
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

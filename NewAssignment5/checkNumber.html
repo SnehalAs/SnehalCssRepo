@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Check</title>
+</head>
+<body>
+    <h2>Check if a Number is Greater than 70</h2>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="checkNumber()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkNumber() {
+            var number = document.getElementById("numberInput").value;
+            var result = number > 70;
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

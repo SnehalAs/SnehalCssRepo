@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Given list L
+let L = [1, "two", 9, 5.09, "Three", -558, "four", -93.7, "six"];
+
+// Function to swap elements in list L based on indices I1 and I2
+function swapElements(I1, I2, L) {
+  // Check if indices are within bounds
+  if (I1 >= 0 && I1 < L.length && I2 >= 0 && I2 < L.length && I1 !== I2) {
+    // Swap elements using destructuring assignment
+    [L[I1], L[I2]] = [L[I2], L[I1]];
+  }
+}
+
+// Example: Read indices I1 and I2 (you can replace this with any input method as needed)
+let I1 = 1; // Example index I1, you can replace this with your own input method
+let I2 = 5; // Example index I2, you can replace this with your own input method
+
+// Call the function to swap elements in list L
+swapElements(I1, I2, L);
+
+// Print the updated list L after swapping
+console.log("Updated list L:", L);
+
+    </script>
+</body>
+</html>

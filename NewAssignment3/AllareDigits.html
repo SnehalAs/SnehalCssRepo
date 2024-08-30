@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check if all characters in the string are digits
+function areAllDigits(str) {
+    // Iterate through each character in the string
+    for (let i = 0; i < str.length; i++) {
+        // Check if the character is not a digit
+        if (str[i] < '0' || str[i] > '9') {
+            return false; // Return false if any non-digit character is found
+        }
+    }
+    return true; // Return true if all characters are digits
+}
+
+// Example usage with input string
+let inputString = "1234569"; // You can change this value to test with different inputs
+
+// Call the function to check if all characters are digits
+let result = areAllDigits(inputString);
+
+// Print the result as a boolean
+console.log(result);
+
+    </script>
+</body>
+</html>

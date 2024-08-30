@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check First and Last N Characters</title>
+</head>
+<body>
+    <h2>Check if First and Last N Characters are Not the Same</h2>
+    <label for="inputString">Enter a string:</label>
+    <input type="text" id="inputString" placeholder="Enter a string">
+    <br><br>
+    <label for="numberN">Enter a number N:</label>
+    <input type="number" id="numberN" placeholder="Enter N">
+    <br><br>
+    <button onclick="checkCharacters()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkCharacters() {
+            var inputString = document.getElementById("inputString").value.toLowerCase();
+            var N = parseInt(document.getElementById("numberN").value);
+            
+            var firstN = inputString.substring(0, N);
+            var lastN = inputString.substring(inputString.length - N);
+
+            var result = firstN !== lastN;
+            
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Book Purchase</title>
+</head>
+<body>
+    <h2>Check Book Purchase</h2>
+    <label for="sizeInput">Enter size (large/small):</label>
+    <input type="text" id="sizeInput" placeholder="Enter size">
+    <br><br>
+    <label for="pageCountInput">Enter page count:</label>
+    <input type="number" id="pageCountInput" placeholder="Enter page count">
+    <br><br>
+    <button onclick="checkBookPurchase()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkBookPurchase() {
+            var size = document.getElementById("sizeInput").value.trim().toLowerCase();
+            var pageCount = parseInt(document.getElementById("pageCountInput").value);
+            
+            if (size === "large" || pageCount >= 300) {
+                document.getElementById("result").innerText = "Buy a Book";
+            } else {
+                document.getElementById("result").innerText = "Do Not Buy a Book";
+            }
+        }
+    </script>
+</body>
+</html>

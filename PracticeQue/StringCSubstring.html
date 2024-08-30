@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //includes
+        const string="Johnny Tutorials";
+        document.write(string);
+        document.write("</br>");
+        document.write(string.includes("John"));
+        document.write("</br>");
+        document.write(string.includes("john"));
+        document.write("</br>");
+
+        //indexOf
+
+        let str="fool";
+        let sstr="pl";
+        document.write(str.indexOf(sstr));
+        document.write("</br>")
+
+        let sent="tutorials i have one tutorials";
+        let count=sent.match(/tutorials/g);
+        let cc=! count ? false : count.length;
+        document.write(cc);
+        document.write("</br>");
+
+        let j="foo";
+        regex=/oo/;
+        document.write(regex.test(j));
+        document.write("</br>");
+
+        //search
+        let st="A Johnny Tutorials";
+        let n=st.search("Johnny");
+        document.write(n);
+
+    </script>
+</body>
+</html>

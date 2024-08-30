@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to calculate the sum of numbers divisible by T from M to N
+function sumDivisibleNumbers(M, N, T) {
+    let sum = 0;
+    for (let i = M; i <= N; i++) {
+        if (i % T === 0) {
+            sum += i;
+        }
+    }
+    console.log(sum);
+}
+
+// Read the input numbers M, N, and T
+let M = 15; // You can change this value to test with different inputs
+let N = 40; // You can change this value to test with different inputs
+let T = 5;  // You can change this value to test with different inputs
+
+// Call the function to calculate and print the sum of numbers divisible by T
+sumDivisibleNumbers(M, N, T);
+
+    </script>
+</body>
+</html>

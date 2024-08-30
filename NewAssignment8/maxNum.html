@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Given input string of space-separated integers
+let input = "1 0 3 2 9 8";
+
+// Function to find and print the maximum number
+function findMaxNumber(input) {
+  // Split the input string into an array of strings
+  let numbersStr = input.split(" ");
+
+  // Convert array of strings to array of integers
+  let numbers = numbersStr.map(Number);
+
+  // Find the maximum number using Math.max()
+  let maxNumber = Math.max(...numbers);
+
+  // Print the maximum number
+  console.log(maxNumber);
+}
+
+// Call the function to find and print the maximum number
+findMaxNumber(input);
+
+    </script>
+</body>
+</html>

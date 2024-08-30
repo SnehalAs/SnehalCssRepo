@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to replace a character at a specific index in a word
+function replaceCharacterAtIndex(word, index, replacement) {
+    if (index < 0 || index >= word.length) {
+        console.log("Invalid index position.");
+        return;
+    }
+
+    let result = word.slice(0, index) + replacement + word.slice(index + 1); // Concatenate parts with replacement
+
+    console.log(result);
+}
+
+// Example usage with input word, index, and replacement letter
+let word = "Prime"; // You can change this value to test with different inputs
+let index = 3;      // You can change this value to test with different inputs
+let replacement = "z"; // You can change this value to test with different inputs
+
+// Call the function to replace character at index and print the result
+replaceCharacterAtIndex(word, index, replacement);
+
+    </script>
+</body>
+</html>

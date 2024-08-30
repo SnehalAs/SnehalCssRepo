@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Team Up Condition</title>
+</head>
+<body>
+    <h2>Check Team Up Condition</h2>
+    <label for="scoreA">Enter score A:</label>
+    <input type="number" id="scoreA" placeholder="Enter score A">
+    <br><br>
+    <label for="scoreB">Enter score B:</label>
+    <input type="number" id="scoreB" placeholder="Enter score B">
+    <br><br>
+    <button onclick="checkTeamUp()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkTeamUp() {
+            var scoreA = parseFloat(document.getElementById("scoreA").value);
+            var scoreB = parseFloat(document.getElementById("scoreB").value);
+            
+            if ((scoreA > 300 || scoreB > 300) && (scoreA + scoreB < 500)) {
+                document.getElementById("result").innerText = "Can team up";
+            } else {
+                document.getElementById("result").innerText = "Cannot team up";
+            }
+        }
+    </script>
+</body>
+</html>

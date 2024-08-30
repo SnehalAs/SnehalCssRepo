@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to print all uppercase letters from a string
+function printUppercaseLetters(str) {
+    let uppercaseLetters = "";
+
+    // Iterate through each character in the string
+    for (let i = 0; i < str.length; i++) {
+        // Check if the character is uppercase
+        if (str[i] >= 'A' && str[i] <= 'Z') {
+            uppercaseLetters += str[i]; // Append uppercase letter to the result string
+        }
+    }
+
+    // Print the uppercase letters found
+    console.log("Uppercase Letters:", uppercaseLetters);
+}
+
+// Example usage with input string
+let inputString = "Hello WorlD"; // You can change this value to test with different inputs
+
+// Call the function to print uppercase letters
+printUppercaseLetters(inputString);
+
+    </script>
+</body>
+</html>

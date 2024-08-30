@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printIntegersFromMtoN(M, N) {
+    if (M <= N) {
+        for (let i = M; i <= N; i++) {
+            console.log(i);
+        }
+    } else {
+        for (let i = M; i >= N; i--) {
+            console.log(i);
+        }
+    }
+}
+
+// Example usage:
+let M = 5; // You can change this value for testing
+let N = 10; // You can change this value for testing
+printIntegersFromMtoN(M, N);
+
+    </script>
+</body>
+</html>

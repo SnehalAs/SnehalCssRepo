@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to repeat the string N times separated by space
+function repeatString(str, N) {
+    let result = "";
+    
+    for (let i = 0; i < N; i++) {
+        result += str;
+        if (i < N - 1) {
+            result += " ";
+        }
+    }
+
+    console.log(result);
+}
+
+// Example usage with input values
+let str = "SnehApurv"; // You can change this value to test with different inputs
+let N = 13; // You can change this value to test with different inputs
+
+// Call the function to repeat the string N times separated by space
+repeatString(str, N);
+
+    </script>
+</body>
+</html>

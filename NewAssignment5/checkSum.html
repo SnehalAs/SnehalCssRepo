@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Digits Check</title>
+</head>
+<body>
+    <h2>Check if Sum of Digits of a Two-Digit Number is Greater Than 7</h2>
+    <input type="number" id="numberInput" placeholder="Enter a two-digit number">
+    <button onclick="checkSum()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkSum() {
+            var N = document.getElementById("numberInput").value;
+            
+            // Check if the input is a valid two-digit number
+            if (N >= 10 && N <= 99) {
+                var firstDigit = Math.floor(N / 10);
+                var secondDigit = N % 10;
+                var sumOfDigits = firstDigit + secondDigit;
+                var result = sumOfDigits > 7;
+                document.getElementById("result").innerText = result;
+            } else {
+                document.getElementById("result").innerText = "Invalid input. Please enter a two-digit number.";
+            }
+        }
+    </script>
+</body>
+</html>

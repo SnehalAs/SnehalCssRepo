@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Calculator</title>
+</head>
+<body>
+    <script>
+        function calculateProduct(M, N) {
+            let product = 1;
+            for (let i = M; i <= N; i++) {
+                product *= i;
+            }
+            console.log(`The product of numbers from ${M} to ${N} is: ${product}`);
+        }
+
+        // Prompt the user for the numbers M and N
+        const M = parseInt(prompt('Enter the starting number (M):'));
+        const N = parseInt(prompt('Enter the ending number (N):'));
+
+        if (isNaN(M) || isNaN(N) || M > N) {
+            console.log('Please enter valid numbers where M is less than or equal to N.');
+        } else {
+            calculateProduct(M, N);
+        }
+    </script>
+</body>
+</html>

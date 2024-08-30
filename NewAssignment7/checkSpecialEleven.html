@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check if the number is "Special Eleven"
+function checkSpecialEleven(N) {
+  const remainder = N % 11;
+  if (remainder === 0 || remainder === 1) {
+    console.log("Special Eleven");
+  } else {
+    console.log("Normal Number");
+  }
+}
+
+// Read a number N
+const N = parseFloat(prompt("Enter a number (N): "));
+
+// Call the function to check and print the result
+checkSpecialEleven(N);
+
+    </script>
+</body>
+</html>

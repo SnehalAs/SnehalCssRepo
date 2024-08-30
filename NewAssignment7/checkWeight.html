@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check the weight W of the box
+function checkWeight(W) {
+  if (W >= 100) {
+    console.log("Box is Heavier");
+  } else if (W >= 30) {
+    console.log("Box is Heavy");
+  }
+}
+
+// Read the weight W of the box
+const W = parseFloat(prompt("Enter the weight of the box in kg (W): "));
+
+// Call the function to check and print the result
+checkWeight(W);
+
+    </script>
+</body>
+</html>

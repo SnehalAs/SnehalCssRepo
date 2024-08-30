@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check divisibility of N
+function checkDivisibility(N) {
+  if (N % 10 === 0) {
+    console.log("Divisible by 10");
+  } else if (N % 5 === 0) {
+    console.log("Divisible by 5");
+  } else {
+    console.log("Not Divisible by 10 or 5");
+  }
+}
+
+// Read a number N
+const N = parseInt(prompt("Enter a number (N): "));
+
+// Call the function to check and print the result
+checkDivisibility(N);
+
+    </script>
+</body>
+</html>

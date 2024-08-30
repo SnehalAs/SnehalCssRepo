@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = {
+            name:"Apurv",
+            age:26
+        };
+        document.write(student);
+        console.log(student);
+        document.write("</br>");
+        document.write('name' in student);
+        document.write("</br>");
+        document.write(student.hasOwnProperty('name'));
+        document.write("</br>");
+
+        let trainee = {
+            name: "Snehal",
+            age: 26
+        }
+        let hasKey = 'name' in trainee;
+        if (hasKey){
+            document.write("key Exists");
+            document.write("</br>");
+        }else{
+            document.write("key Doesn't Exists");
+        }
+    </script>
+</body>
+</html>

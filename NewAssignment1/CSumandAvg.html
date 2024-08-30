@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum and Average Calculator</title>
+</head>
+<body>
+    <script>
+        function calculateSumAndAverage() {
+            let sum = 0;
+            const numberOfInputs = 10;
+
+            for (let i = 1; i <= numberOfInputs; i++) {
+                const userInput = prompt(`Enter number ${i}:`);
+                const number = parseFloat(userInput);
+                
+                if (isNaN(number)) {
+                    console.log('Please enter a valid number.');
+                    return;
+                }
+
+                sum += number;
+            }
+
+            const average = sum / numberOfInputs;
+            console.log(`The sum of the given ${numberOfInputs} inputs is: ${sum}`);
+            console.log(`The average of the given ${numberOfInputs} inputs is: ${average}`);
+        }
+
+        // Calculate the sum and average of 10 inputs
+        calculateSumAndAverage();
+    </script>
+</body>
+</html>

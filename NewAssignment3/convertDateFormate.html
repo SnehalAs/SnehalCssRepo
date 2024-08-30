@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to convert date format from dd-mm-yy to dd/mm/yy
+function convertDateFormat(inputDate) {
+    // Split the input date string by '-' to get day, month, and year
+    let parts = inputDate.split('-');
+
+    // Check if the input date string has the correct format (dd-mm-yy)
+    if (parts.length !== 3) {
+        console.log("Invalid date format. Please provide date in dd-mm-yy format.");
+        return;
+    }
+
+    // Reconstruct the date string in dd/mm/yy format
+    let outputDate = parts[0] + '/' + parts[1] + '/' + parts[2];
+
+    // Print the converted date string
+    console.log(outputDate);
+}
+
+// Example usage with input date string in dd-mm-yy format
+let inputDate = "31-12-22"; // You can change this value to test with different inputs
+
+// Call the function to convert date format
+convertDateFormat(inputDate);
+
+    </script>
+</body>
+</html>

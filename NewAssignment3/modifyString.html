@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to modify the string as specified
+function modifyString(str) {
+    let modifiedString = ""; // Initialize an empty string to store the modified string
+
+    // Iterate through each character of the string
+    for (let i = 0; i < str.length; i++) {
+        // Check if the character is uppercase and it's not the first character
+        if (str[i] === str[i].toUpperCase() && i > 0) {
+            modifiedString += " "; // Add a space before the uppercase character
+        }
+        modifiedString += str[i]; // Add the current character to the modified string
+    }
+
+    return modifiedString;
+}
+
+// Example usage with input string
+let inputString = "HelloWorldThisIsCamelCase"; // You can change this value to test with different strings
+
+// Call the function to modify the string as specified
+let result = modifyString(inputString);
+
+// Print the modified string
+console.log(result);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // Function to find the greatest remainder
+function findGreatestRemainder(N) {
+  // Calculate remainders
+  const remainderWhenDividedBy4 = N % 4;
+  const remainderWhenDividedBy5 = N % 5;
+
+  // Determine the greatest remainder
+  const greatestRemainder = Math.max(remainderWhenDividedBy4, remainderWhenDividedBy5);
+
+  // Print the results
+  console.log(`Remainder when ${N} is divided by 4: ${remainderWhenDividedBy4}`);
+  console.log(`Remainder when ${N} is divided by 5: ${remainderWhenDividedBy5}`);
+  console.log(`The greatest remainder is: ${greatestRemainder}`);
+}
+
+// Read a number N
+const N = parseFloat(prompt("Enter a number (N): "));
+
+// Call the function to find and print the greatest remainder
+findGreatestRemainder(N);
+
+   </script> 
+</body>
+</html>

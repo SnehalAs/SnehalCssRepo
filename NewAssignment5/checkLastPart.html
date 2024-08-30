@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Last Part Check</title>
+</head>
+<body>
+    <h2>Check if Second Word is the Last Part of First Word</h2>
+    <input type="text" id="wordAInput" placeholder="Enter the first word">
+    <input type="text" id="wordBInput" placeholder="Enter the second word">
+    <button onclick="checkLastPart()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkLastPart() {
+            var wordA = document.getElementById("wordAInput").value.toLowerCase();
+            var wordB = document.getElementById("wordBInput").value.toLowerCase();
+            var result = wordA.endsWith(wordB);
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

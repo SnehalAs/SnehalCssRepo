@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check if a password is valid (contains at least one digit)
+function isValidPassword(password) {
+    // Regular expression to match at least one digit
+    let digitRegex = /\d/;
+
+    // Check if the password contains at least one digit
+    if (digitRegex.test(password)) {
+        return "Valid Password";
+    } else {
+        return "Invalid Password";
+    }
+}
+
+// Example usage with input password
+let inputPassword = "Password123"; // You can change this value to test with different passwords
+
+// Call the function to check if password is valid
+let result = isValidPassword(inputPassword);
+
+// Print the result
+console.log(result);
+
+    </script>
+</body>
+</html>

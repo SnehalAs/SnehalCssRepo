@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+        // let s ="SnehalTembhurne";
+        // document.write(s.length);
+        // document.write("</br>");
+        // document.write(s.toLocaleLowerCase());
+        // document.write("</br>");
+        // document.write(s.toLocaleUpperCase());
+        // document.write("</br>");
+        // document.write(s.split(""));
+        // let names=["java","react","html"];
+        // document.write("</br>");
+        // document.write(names.join());
+        // for(let i=0; i<10; i=i+2){
+        //     document.write("</br>");
+        //     document.write(i);
+        // }
+        // hello = (val) => "hello" +val;
+        // document.write("</br>");
+        // document.write(hello("Snehal"));
+        // function hel (val){
+        //     document.write("</br>");
+        //     document.write("Hello"+val);
+        // }
+        // hel("Snehal");
+        // //map
+        // let numbers=[16,25,36];
+        // let results=numbers.map(Math.sqrt);
+        // document.write("</br>");
+        // document.write(results);
+        // console.log(results);
+
+        function alternatetext(s){
+            let c=s.toLowerCase().split("");
+            for(let i=0; i<c.length;i=i+2){
+                c[i]=c[i].toUpperCase();
+
+            }
+            return c.join("");
+        }
+        document.write(alternatetext("SnehalTembhurne"));
+        document.write("</br>");
+
+        //logic 2
+        let s="SnehalTembhurne";
+        s=s.split("").map((letter,i) => (i%2)==0  ?
+        letter.toLocaleUpperCase():letter.toLocaleLowerCase()).join("");
+        document.write(s);  
+      </script>
+</body>
+</html>

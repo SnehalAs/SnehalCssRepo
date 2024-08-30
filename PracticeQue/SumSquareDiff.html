@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //logic1
+      function sumSqDiff(number) {
+        let sofSqu = 0;
+        let sqofSum = 0;
+        for (let i = 1; i <= number; i++) {
+          sofSqu += Math.pow(i, 2);
+          sqofSum += i;
+        }
+        sqofSum = Math.pow(sqofSum, 2);
+        return sqofSum - sofSqu;
+      }
+      const ta = Date.now();
+      document.write(sumSqDiff(3));
+      document.write("</br>");
+      document.write("time taken" + Math.round(Date.now() - ta));
+      document.write("</br>");
+      document.write(sumSqDiff(10));
+
+      //logic 2
+
+      function SumSquareDiff(n) {
+        const sumofSquares = () => {
+          let total = 0;
+          for (let i = 0; i <= n; i++) {
+            total += i ** 2;
+          }
+          return total;
+        };
+        const squareofSum = () => {
+          let total = 0;
+          for (let i = 1; i <= n; i++) {
+            total += i;
+          }
+          return total ** 2;
+        };
+        const answer = squareofSum() - sumofSquares();
+        return answer;
+      }
+      const t = Date.now();
+      document.write("</br>");
+      document.write(SumSquareDiff(3));
+      document.write("</br>");
+      document.write("time taken" + Math.round(Date.now() - t));
+      document.write("</br>");
+      document.write(SumSquareDiff(10));
+    </script>
+  </body>
+</html>

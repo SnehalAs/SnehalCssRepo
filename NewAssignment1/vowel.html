@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to print vowels in the string
+function printVowels(str) {
+    let vowels = "aeiou";
+    let result = "";
+
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i].toLowerCase())) {
+            result += str[i] + " ";
+        }
+    }
+
+    if (result.length > 0) {
+        console.log(result.trim());
+    } else {
+        console.log("No Vowels Found");
+    }
+}
+
+// Example usage with input string
+let inputString = "Hello World"; // You can change this value to test with different inputs
+
+// Call the function to print vowels or "No Vowels Found"
+printVowels(inputString);
+
+    </script>
+</body>
+</html>

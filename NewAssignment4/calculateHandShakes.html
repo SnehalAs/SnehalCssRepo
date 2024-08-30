@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateHandshakes(N) {
+    if (N < 2) {
+        console.log("Number of handshakes: 0");
+        return;
+    }
+
+    let handshakes = (N * (N - 1)) / 2;
+    console.log("Number of handshakes: " + handshakes);
+}
+
+// Example usage:
+let N = 10; // You can change this value for testing
+calculateHandshakes(N);
+
+    </script>
+</body>
+</html>

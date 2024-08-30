@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Substring Check at Index</title>
+</head>
+<body>
+    <h2>Check if B Starts at Index I in A</h2>
+    <input type="text" id="wordAInput" placeholder="Enter the first word">
+    <input type="text" id="wordBInput" placeholder="Enter the second word">
+    <input type="number" id="indexInput" placeholder="Enter index I">
+    <button onclick="checkSubstring()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkSubstring() {
+            var wordA = document.getElementById("wordAInput").value.toLowerCase();
+            var wordB = document.getElementById("wordBInput").value.toLowerCase();
+            var index = parseInt(document.getElementById("indexInput").value);
+            
+            var substringA = wordA.substring(index, index + wordB.length);
+            var result = (substringA === wordB);
+            
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

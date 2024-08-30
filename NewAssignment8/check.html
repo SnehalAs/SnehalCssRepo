@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Given list
+let list = ["apple", "banana", "cherry"];
+
+// Given number
+let number = 5; // Example number, you can change this to any number you want to concatenate
+
+// Create a new list with number concatenated at the beginning
+let newListBeginning = [number, ...list]; // Using spread operator to concatenate at the beginning
+
+// Create a new list with number concatenated at the end
+let newListEnd = [...list, number]; // Using spread operator to concatenate at the end
+
+// Print the results
+console.log("List with number concatenated at the beginning:", newListBeginning);
+console.log("List with number concatenated at the end:", newListEnd);
+
+    </script>
+</body>
+</html>

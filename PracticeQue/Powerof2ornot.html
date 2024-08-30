@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // document.write(typeof(42));
+        // document.write("</br>");
+        // document.write(typeof'Snehal');
+        // document.write("</br>");
+        // let a=2;
+        // document.write(a+=3);
+
+        // function Powerof(x){
+        //     if(typeof x!=='number')
+        //     return 'Its not a number';
+        //   return x && (x & (x-1))===0;
+        // }
+        // document.write(Powerof(16));
+        // document.write("</br>");
+        // document.write(Powerof(12));
+
+        function Powerof (x){
+            while((x%2)==0 && x>1)
+            x/=2;
+        return(x==1);
+        }
+        document.write(Powerof(4));
+        document.write("</br>");
+        document.write(Powerof(16));
+        document.write("</br>");
+        document.write(Powerof(11));
+    </script>
+</body>
+</html>

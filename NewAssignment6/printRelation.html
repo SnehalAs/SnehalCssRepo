@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Relation Between Two Numbers</title>
+</head>
+<body>
+    <h2>Print Relation Between Two Numbers</h2>
+    <label for="numberX">Enter number X:</label>
+    <input type="number" id="numberX" placeholder="Enter X">
+    <br><br>
+    <label for="numberY">Enter number Y:</label>
+    <input type="number" id="numberY" placeholder="Enter Y">
+    <br><br>
+    <button onclick="printRelation()">Print Relation</button>
+    <p id="result"></p>
+
+    <script>
+        function printRelation() {
+            var X = parseFloat(document.getElementById("numberX").value);
+            var Y = parseFloat(document.getElementById("numberY").value);
+            
+            if (X < Y) {
+                document.getElementById("result").innerText = "X < Y";
+            } else if (X > Y) {
+                document.getElementById("result").innerText = "X > Y";
+            } else {
+                document.getElementById("result").innerText = "X = Y";
+            }
+        }
+    </script>
+</body>
+</html>

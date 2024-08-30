@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to print only alphabets from a string with special characters
+function printAlphabets(str) {
+    let alphabets = "";
+    
+    // Iterate through the string
+    for (let i = 0; i < str.length; i++) {
+        // Check if the character is an alphabet (assuming English alphabets A-Z and a-z)
+        if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z')) {
+            alphabets += str[i]; // Append alphabet to the result string
+        }
+    }
+
+    console.log(alphabets);
+}
+
+// Example usage with input string
+let inputString = "##S##n##e##h##a##l##"; // You can change this value to test with different inputs
+
+// Call the function to print only alphabets
+printAlphabets(inputString);
+
+    </script>
+</body>
+</html>

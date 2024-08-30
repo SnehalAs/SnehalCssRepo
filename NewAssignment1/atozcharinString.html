@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to print 'a' and 'z' characters in the string
+function printAandZCharacters(str) {
+    let foundA = false;
+    let foundZ = false;
+    let result = "";
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === 'a') {
+            foundA = true;
+            result += 'a ';
+        }
+        if (str[i] === 'z') {
+            foundZ = true;
+            result += 'z ';
+        }
+    }
+
+    if (foundA || foundZ) {
+        console.log(result.trim());
+    } else {
+        console.log("No Match Found");
+    }
+}
+
+// Example usage with input string
+let inputString = "My name is nehal zoom"; // You can change this value to test with different inputs
+
+// Call the function to print 'a' and 'z' characters or "No Match Found"
+printAandZCharacters(inputString);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Greatest Number</title>
+</head>
+<body>
+    <h2>Find Greatest Number</h2>
+    <label for="numberA">Enter number A:</label>
+    <input type="number" id="numberA" placeholder="Enter A">
+    <br><br>
+    <label for="numberB">Enter number B:</label>
+    <input type="number" id="numberB" placeholder="Enter B">
+    <br><br>
+    <button onclick="findGreatest()">Find Greatest</button>
+    <p id="result"></p>
+
+    <script>
+        function findGreatest() {
+            var A = parseFloat(document.getElementById("numberA").value);
+            var B = parseFloat(document.getElementById("numberB").value);
+            
+            var greatest = A; // Assume A is the greatest initially
+            
+            if (B > A) {
+                greatest = B; // If B is greater than A, update greatest to B
+            }
+            
+            document.getElementById("result").innerText = `The greatest number is: ${greatest}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Number and Perform Calculation</title>
+</head>
+<body>
+    <h2>Check Number and Perform Calculation</h2>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <br><br>
+    <button onclick="performCalculation()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function performCalculation() {
+            var N = parseFloat(document.getElementById("numberInput").value);
+            var result = 0;
+            
+            if (N > 10) {
+                result = N + 5;
+            } else {
+                result = N + 1;
+            }
+            
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+    </script>
+</body>
+</html>
+

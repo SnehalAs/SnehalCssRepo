@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <script>
+
+       let nums=[1,3,5,2,5];
+       document.write(nums[0]);
+       document.write("</br>");
+       let f=nums.includes(2);
+       document.write(f);
+       document.write("</br>");
+       let item=3;
+       let ff=nums.some(x=> x===item);
+       document.write(ff);
+       document.write("</br>");
+       document.write(["Snehal","Suresh","Tembhurne","Vivek","Seema"].includes("Suresh"));
+       console.log(["Snehal","Suresh","Tembhurne"].includes("Vivek"));
+       document.write("</br>");
+       let students =["Tonu","Monu","Sonu"];
+       function checkValue(Value,arr){
+        let status="Not Exists";
+        for(let i=0; i<arr.length;i++){
+            let name=arr[i];
+            if(name==Value){
+                status="Exists";
+                break;
+            }
+        }
+        return status;
+       }
+       document.write('status:::'+ checkValue('Sonu',students));
+       document.write("</br>");
+       document.write('status:::'+checkValue('kkk',students));
+
+      </script>
+</body>
+</html>

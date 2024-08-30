@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let str="Snehal T";
+        // document.write(str.length);
+        // let strn="How are you";
+        // document.write(strn.split(""));
+        // let strnw="I Love You";
+        // document.write(strnw.split(""));
+        // let stu=["Snehu","s1","s2","s3","s4"];
+        // document.write(stu.sort());
+        // let array=["a1","a2","a3","a4","a5"];
+        // document.write(array.sort((a,b) => b.length- a.length)); 
+        // document.write(array.sort((a,b) => a.length- a.length));
+
+
+        // let str="javafullstack";
+        // document.write(str.length);
+
+        // function long(text){
+        //     let strSplit=text.split(" ");
+        //     let longestword=0;
+        //     for(let i=0; i<strSplit.length; i++){
+        //         if(strSplit[i].length>longestword){
+        //             longestword=strSplit[i].length;
+        //         }
+        //     }
+        //     return longestword;
+        // }
+        // document.write(long(" i am the best in javafullstack"));
+
+        function longestword(text){
+            let sortedArray=text.split(" ").sort((wordA,wordB) =>
+            wordB.length - wordA.length);
+            return sortedArray[0];
+        }
+        document.write(longestword("i am the best in javaullstack"))
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to print first two and last two letters with stars in between
+function printFirstLastLettersWithStars(word) {
+    let firstTwo = word.slice(0, 2);  // Get the first two letters
+    let lastTwo = word.slice(-2);     // Get the last two letters
+    let stars = "*".repeat(word.length - 4);  // Calculate the number of stars needed
+
+    let result = firstTwo + stars + lastTwo;
+    console.log(result);
+}
+
+// Example usage with input word
+let word = "loveyou"; // You can change this value to test with different inputs
+
+// Call the function to print first two and last two letters with stars
+printFirstLastLettersWithStars(word);
+
+    </script>
+</body>
+</html>

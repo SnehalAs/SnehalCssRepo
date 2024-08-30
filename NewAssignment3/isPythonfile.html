@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check if a file is a Python file (.py)
+function isPythonFile(filename) {
+    // Check if the filename ends with '.py'
+    if (filename.endsWith(".py")) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Example usage with input filename
+let inputFilename = "script.py"; // You can change this value to test with different filenames
+
+// Call the function to check if file is a Python file
+let result = isPythonFile(inputFilename);
+
+// Print the result as a boolean
+console.log(result);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         // Assign a value to N
+// const N = 47; // Replace with any two-digit number
+
+// // Function to check if the number is "Special Number"
+// function checkSpecialNumber(N) {
+//   // Convert number to string to extract digits
+//   const digits = N.toString().split('').map(Number);
+//   const sumOfDigits = digits.reduce((acc, val) => acc + val, 0);
+//   const hasDigitSeven = digits.includes(7);
+//   const isDivisibleBySeven = N % 7 === 0;
+
+//   // Check conditions
+//   if (sumOfDigits === 7 || hasDigitSeven || isDivisibleBySeven) {
+//     console.log("Special Number");
+//   } else {
+//     console.log("Normal Number");
+//   }
+// }
+
+// // Call the function to check and print the result
+// checkSpecialNumber(N);
+// Function to check if the number is "Special Number"
+function checkSpecialNumber(N) {
+  // Convert number to string to extract digits
+  const digits = N.toString().split('').map(Number);
+  const sumOfDigits = digits.reduce((acc, val) => acc + val, 0);
+  const hasDigitSeven = digits.includes(7);
+  const isDivisibleBySeven = N % 7 === 0;
+
+  // Check conditions
+  if (sumOfDigits === 7 || hasDigitSeven || isDivisibleBySeven) {
+    console.log("Special Number");
+  } else {
+    console.log("Normal Number");
+  }
+}
+
+// Read a two-digit number N
+const N = parseInt(prompt("Enter a two-digit number (N): "));
+
+// Ensure the number is two digits
+if (N >= 10 && N <= 99) {
+  // Call the function to check and print the result
+  checkSpecialNumber(N);
+} else {
+  console.log("Please enter a valid two-digit number.");
+}
+
+
+    </script>
+</body>
+</html>

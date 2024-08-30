@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check if a URL is secured (starts with https://)
+function isSecureUrl(url) {
+    // Check if the URL starts with 'https://'
+    if (url.startsWith("https://")) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Example usage with input URL
+let inputUrl = "https://www.example.com"; // You can change this value to test with different URLs
+
+// Call the function to check if URL is secure
+let result = isSecureUrl(inputUrl);
+
+// Print the result as a boolean
+console.log(result);
+
+    </script>
+</body>
+</html>

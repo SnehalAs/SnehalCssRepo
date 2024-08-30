@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a=['a','b','c','d'];
+        // document.write(a.push('e'));
+        // document.write("</br>");
+        // document.write(a);
+        // //slice
+        // let k=['h','e','l','l','o'];
+        // document.write("</br>");
+        // document.write(k.splice(0,2));
+
+        function SplitArray(arr,size){
+            let finalarr=[];
+            let split=0;
+            while(split <arr.length){
+                finalarr.push(arr.slice(split,split+size));
+                split+=size;
+            }
+            return finalarr;
+        }
+        document.write(SplitArray(['a','b','c','d'],2));
+        console.log(SplitArray(['a','b','c','d'],2));
+        document.write("</br>");
+        document.write(SplitArray(['z','e','a','b','c','d'],3));
+        console.log(SplitArray(['z','e','a','b','c','d'],3));
+    </script>
+</body>
+</html>

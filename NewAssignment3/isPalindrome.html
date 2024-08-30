@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check if a string is a palindrome
+function isPalindrome(str) {
+    // Convert the string to lowercase to handle case sensitivity
+    let lowerCaseStr = str.toLowerCase();
+    
+    // Reverse the string
+    let reversedStr = lowerCaseStr.split('').reverse().join('');
+    
+    // Check if the original string is equal to the reversed string
+    if (lowerCaseStr === reversedStr) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Example usage with input string
+let inputString = "Madam"; // You can change this value to test with different strings
+
+// Call the function to check if string is a palindrome
+let result = isPalindrome(inputString);
+
+// Print the result as a boolean
+console.log(result);
+
+    </script>
+</body>
+</html>

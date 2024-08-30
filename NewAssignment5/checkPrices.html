@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Selling Price Greater Than Buying Price</title>
+</head>
+<body>
+    <h2>Check if Selling Price is Greater Than Buying Price</h2>
+    <label for="sellingPrice">Enter Selling Price:</label>
+    <input type="number" id="sellingPrice" placeholder="Enter selling price">
+    <br><br>
+    <label for="buyingPrice">Enter Buying Price:</label>
+    <input type="number" id="buyingPrice" placeholder="Enter buying price">
+    <br><br>
+    <button onclick="checkPrices()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkPrices() {
+            var sellingPrice = parseFloat(document.getElementById("sellingPrice").value);
+            var buyingPrice = parseFloat(document.getElementById("buyingPrice").value);
+            
+            var result = sellingPrice > buyingPrice;
+            
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to print the word excluding the fourth letter
+function excludeFourthLetter(word) {
+    if (word.length < 4) {
+        console.log("Word length is less than 4 characters.");
+        return;
+    }
+
+    let result = word.slice(0, 3) + word.slice(4); // Concatenate letters before and after the fourth letter
+
+    console.log(result);
+}
+
+// Example usage with input word
+let word = "Snehal"; // You can change this value to test with different inputs
+
+// Call the function to print the word excluding the fourth letter
+excludeFourthLetter(word);
+
+    </script>
+</body>
+</html>

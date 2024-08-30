@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to compare scores A and B
+function compareScores(A, B) {
+  if (A > B) {
+    console.log("Win");
+  } else if (A === B) {
+    console.log("Draw");
+  } else {
+    console.log("Lose");
+  }
+}
+
+// Read scores A and B
+const A = parseFloat(prompt("Enter score A: "));
+const B = parseFloat(prompt("Enter score B: "));
+
+// Call the function to compare and print the result
+compareScores(A, B);
+
+    </script>
+</body>
+</html>

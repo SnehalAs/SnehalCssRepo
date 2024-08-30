@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Last Three Characters</title>
+</head>
+<body>
+    <h2>Check if Last Three Characters in Two Strings are the Same</h2>
+    <input type="text" id="string1Input" placeholder="Enter the first string">
+    <input type="text" id="string2Input" placeholder="Enter the second string">
+    <button onclick="checkLastThree()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkLastThree() {
+            var string1 = document.getElementById("string1Input").value.toLowerCase();
+            var string2 = document.getElementById("string2Input").value.toLowerCase();
+
+            var lastThree1 = string1.substring(string1.length - 3);
+            var lastThree2 = string2.substring(string2.length - 3);
+
+            var result = lastThree1 === lastThree2;
+            
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

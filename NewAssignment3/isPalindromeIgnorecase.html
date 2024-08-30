@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check if a string is a palindrome ignoring case
+function isPalindromeIgnoreCase(str) {
+    // Convert the string to lowercase to ignore case sensitivity
+    let lowerCaseStr = str.toLowerCase();
+    
+    // Remove non-alphanumeric characters from the string using regex
+    let alphanumericStr = lowerCaseStr.replace(/[^a-z0-9]/g, '');
+
+    // Reverse the alphanumeric string
+    let reversedStr = alphanumericStr.split('').reverse().join('');
+    
+    // Check if the original string is equal to the reversed string
+    if (alphanumericStr === reversedStr) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Example usage with input string
+let inputString = "A man, a plan, a canal, Panama!"; // You can change this value to test with different strings
+
+// Call the function to check if string is a palindrome ignoring case
+let result = isPalindromeIgnoreCase(inputString);
+
+// Print the result as a boolean
+console.log(result);
+
+    </script>
+</body>
+</html>

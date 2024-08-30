@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First and Last Letter Comparison</title>
+</head>
+<body>
+    <h2>Check if First and Last Letters of a Word are Not the Same</h2>
+    <input type="text" id="wordInput" placeholder="Enter a word">
+    <button onclick="checkLetters()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkLetters() {
+            var word = document.getElementById("wordInput").value.toLowerCase(); // Convert to lowercase for case insensitivity
+            var firstLetter = word.charAt(0);
+            var lastLetter = word.charAt(word.length - 1);
+            var result = firstLetter !== lastLetter;
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

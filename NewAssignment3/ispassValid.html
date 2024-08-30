@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check if a password is valid
+function isValidPassword(password) {
+    let hasUppercase = false;
+    let hasLowercase = false;
+    let hasDigit = false;
+
+    // Iterate through each character in the password
+    for (let i = 0; i < password.length; i++) {
+        // Check if current character is uppercase
+        if (password[i] >= 'A' && password[i] <= 'Z') {
+            hasUppercase = true;
+        }
+        // Check if current character is lowercase
+        if (password[i] >= 'a' && password[i] <= 'z') {
+            hasLowercase = true;
+        }
+        // Check if current character is a digit
+        if (password[i] >= '0' && password[i] <= '9') {
+            hasDigit = true;
+        }
+
+        // Break early if all conditions are met
+        if (hasUppercase && hasLowercase && hasDigit) {
+            break;
+        }
+    }
+
+    // Check if password meets all criteria
+    if (hasUppercase && hasLowercase && hasDigit) {
+        return "Valid"; // Return "Valid" if password meets all criteria
+    } else {
+        return "Invalid"; // Return "Invalid" if password does not meet all criteria
+    }
+}
+
+// Example usage with input password
+let inputPassword = "Password123"; // You can change this value to test with different passwords
+
+// Call the function to check if password is valid and get the result
+let result = isValidPassword(inputPassword);
+
+// Print the result
+console.log(result);
+
+    </script>
+</body>
+</html>

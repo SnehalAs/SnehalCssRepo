@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to print odd numbers from M to N
+function printOddNumbers(M, N) {
+    let result = [];
+    for (let i = M; i <= N; i++) {
+        if (i % 2 !== 0) {
+            result.push(i);
+        }
+    }
+    console.log(result.join(' '));
+}
+
+// Read the input numbers M and N
+let M = 3; // You can change this value to test with different inputs
+let N = 15; // You can change this value to test with different inputs
+
+// Call the function to print odd numbers
+printOddNumbers(M, N);
+
+    </script>
+</body>
+</html>

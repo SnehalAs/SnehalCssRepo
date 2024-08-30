@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={};
+        document.write(obj);
+        console.log(obj);
+
+        //obj['message']="Hello";
+        obj.message="Hi";
+        document.write(obj);
+        console.log(obj);
+        let o={
+            prop:1
+        }
+        document.write(o.hasOwnProperty('prop'));
+        console.log(o.hasOwnProperty('prop'));
+        delete o.prop;
+        document.write(o.hasOwnProperty('prop'));
+        console.log(o.hasOwnProperty('prop'));
+        let student={
+            name:'Johny',
+            age:28,
+            hobbies:['teach','read'],
+            greet:function(){
+                document.write("Johnny Tutorials");
+            },
+            score:{
+                react:80,
+                angular:10
+            }
+
+        }
+delete student['score'];
+    </script>
+</body>
+</html>

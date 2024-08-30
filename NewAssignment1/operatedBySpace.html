@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Digits</title>
+</head>
+<body>
+    <script>
+        function printDigits(number) {
+            const digits = number.toString().split(''); // Convert number to string and split into array of characters
+            console.log(digits.join(' ')); // Join the digits with a space
+        }
+
+        // Prompt the user for the number
+        const number = prompt('Enter a number:');
+        if (!isNaN(number) && number.trim() !== '') {
+            printDigits(number);
+        } else {
+            console.log('Please enter a valid number.');
+        }
+    </script>
+</body>
+</html>

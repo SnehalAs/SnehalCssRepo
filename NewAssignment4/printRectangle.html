@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solid Rectangle Pattern</title>
+</head>
+<body>
+    <h1>Solid Rectangle Pattern</h1>
+    <label for="rowsInput">Enter number of rows (M): </label>
+    <input type="number" id="rowsInput" placeholder="Enter number of rows">
+    <br><br>
+    <label for="columnsInput">Enter number of columns (N): </label>
+    <input type="number" id="columnsInput" placeholder="Enter number of columns">
+    <br><br>
+    <button onclick="printRectangle()">Print Rectangle</button>
+    <pre id="output"></pre>
+
+    <script>
+        function printRectangle() {
+            // Get the input values
+            const m = document.getElementById('rowsInput').value;
+            const n = document.getElementById('columnsInput').value;
+
+            // Get the output element
+            const output = document.getElementById('output');
+            
+            // Clear previous output
+            output.textContent = '';
+
+            // Print the solid rectangle pattern
+            for (let i = 0; i < m; i++) {
+                output.textContent += '*'.repeat(n) + '\n';
+            }
+        }
+    </script>
+</body>
+</html>

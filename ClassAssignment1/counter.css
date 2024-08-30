@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#counter-heading {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#counter-value {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#increment-btn {
+    background-color: green;
+    color: white;
+}
+
+#decrement-btn {
+    background-color: red;
+    color: white;
+}
+
+#reset-btn {
+    background-color: gray;
+    color: white;
+}

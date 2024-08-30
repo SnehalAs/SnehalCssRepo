@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Number Condition</title>
+</head>
+<body>
+    <h2>Check Number Condition</h2>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <br><br>
+    <button onclick="checkNumber()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkNumber() {
+            var number = parseFloat(document.getElementById("numberInput").value);
+            
+            if (number === 0) {
+                document.getElementById("result").innerText = "Zero";
+            } else if (number > 0) {
+                document.getElementById("result").innerText = "Positive";
+            } else {
+                document.getElementById("result").innerText = "Negative"; // Added to cover all cases
+            }
+        }
+    </script>
+</body>
+</html>

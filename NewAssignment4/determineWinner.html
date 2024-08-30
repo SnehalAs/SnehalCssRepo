@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function determineWinner(apurv, snehal) {
+    if (apurv === snehal) {
+        console.log("It's a tie!");
+        return;
+    }
+
+    if (
+        (apurv === "Rock" && snehal === "Scissors") ||
+        (apurv === "Scissors" && snehal === "Paper") ||
+        (apurv === "Paper" && snehal === "Rock")
+    ) {
+        console.log("Apurv wins!");
+    } else {
+        console.log("Snehal wins!");
+    }
+}
+
+// Example usage:
+let apurvChoice = "Scissors"; // You can change this value for testing
+let snehalChoice = "Rock"; // You can change this value for testing
+determineWinner(apurvChoice, snehalChoice);
+
+    </script>
+</body>
+</html>

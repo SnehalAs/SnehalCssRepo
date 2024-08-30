@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        Choose
+        <input type="checkbox" id="abc" onclick="checkMe()"/>
+        <p id="msg" style="display: none; background-color: aqua;">Hello Snehal</p>
+    </form>
+    <script>
+        function checkMe(){
+            let cb=document.getElementById("abc");
+            let text=document.getElementById("msg");
+            if(cb.checked==true){
+                text.style.display="block";
+
+            }else{
+                text.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>

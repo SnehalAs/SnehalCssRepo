@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names=["Snehal","Apurv","Suresh","Seema"];
+        names.push("Vivek");
+        document.write(names);
+        document.write("</br>");
+        names.push("Pragati","Subodh");
+        document.write(names);
+        document.write("</br>");
+  for(let i=0; i<names.length;i++){
+    document.write(names[i]);
+  }
+  //concat
+  document.write("</br>");
+  let name=["Snehal","Apurv","Pragati"];
+  name=name.concat(["Tembhrne","Jambhulkar","Walde"]);
+  document.write(name);
+  document.write("</br>");
+  
+
+  //Unshift
+  let n=[1,2,3];
+  n.unshift(8);
+  document.write(n);
+
+  //Spread 
+  document.write("</br>");
+  let nam=["Chivi","Pratyush","Anvesh"];
+  let newname=[... nam,"rrr"];
+  document.write(newname);
+
+    </script>
+</body>
+</html>

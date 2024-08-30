@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check strings H and I
+function checkStrings(H, I) {
+  if (H === "Y") {
+    console.log("Allowed to Exam Has Hall ticket");
+  } else if (I === "Y") {
+    console.log("Allowed to Exam Has Identification Card");
+  }
+}
+
+// Read strings H and I
+const H = prompt("Does the student have a Hall ticket? (Y/N): ");
+const I = prompt("Does the student have an Identification Card? (Y/N): ");
+
+// Call the function to check and print the result
+checkStrings(H, I);
+
+    </script>
+</body>
+</html>

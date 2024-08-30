@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let str="Snehal T";
+        // let n=str.length;
+        // document.write(n);
+
+        // const st="The Quick Series ";
+        // let res=st.split("");
+        // document.write(res);
+        // const words=st.split('');
+        // document.write(words[0]);
+        // const w=st.split('');
+        // document.write[0];
+        // function countwords(s){
+        //     return s.split(' ').length;
+        // }
+        // document.write(countwords("Snehal Tembhurne"));
+        function countwords(s){
+            totalwords=1;
+            for(i=0;i<s.length;i++){
+                if(s[i]==' '){
+                    totalwords++;
+                }
+            }
+            return totalwords;
+        }
+        document.write(countwords("Snehal Tembhurne Mundipar"))
+    </script>
+</body>
+</html>

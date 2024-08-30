@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Given list L
+const L = ["5", "eat", "9.80", "Water", "python", "-678", "7685.26", "-2.5", "sing"];
+
+// Function to check if S is in L
+function checkInList(S, L) {
+  return L.includes(S);
+}
+
+// Read input string S from user (in a browser environment, prompt is used)
+const S = prompt("Enter a string to check in the list: ");
+
+// Check and print the result
+console.log(checkInList(S, L));
+
+    </script>
+</body>
+</html>

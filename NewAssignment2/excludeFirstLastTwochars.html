@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to exclude the first two and last two characters of a string
+function excludeFirstLastTwoChars(str) {
+    if (str.length < 4) {
+        console.log("String length is less than 4 characters.");
+        return;
+    }
+
+    let result = str.slice(2, -2); // Extract substring excluding first two and last two characters
+
+    console.log(result);
+}
+
+// Example usage with input string
+let str = "##Soft##"; // You can change this value to test with different inputs
+
+// Call the function to exclude first two and last two characters
+excludeFirstLastTwoChars(str);
+
+    </script>
+</body>
+</html>

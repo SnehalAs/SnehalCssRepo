@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+         const text="John tutorials John Programs";
+         let pat="John";
+         document.write(text.replace(pat,"Johnny"));
+         document.write("</br>");
+         const t="John Tutorials John Programs";
+         let p=/John/g;
+         document.write(t.replaceAll(p,"Johnny"));
+         document.write("</br>");
+         let str="Mr dog has a Dog House and Dog Car";
+         
+         document.write(str.replace(/Dog/gi,"Joe"));
+         const search='';
+         const repl='*';
+         const result="dog dog go".replaceAll(search,repl);
+         document.write("</br>");
+         document.write(result);
+
+
+    </script>
+</body>
+</html>

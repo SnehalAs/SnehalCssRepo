@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to print numbers from 1 to N that are divisible by both 2 and 3
+function printDivisibleBy2And3(N) {
+    for (let i = 1; i <= N; i++) {
+        if (i % 2 === 0 && i % 3 === 0) {
+            console.log(i);
+        }
+    }
+}
+
+// Example usage with input value
+let N = 50; // You can change this value to test with different inputs
+
+// Call the function to print numbers divisible by both 2 and 3
+printDivisibleBy2And3(N);
+
+    </script>
+</body>
+</html>

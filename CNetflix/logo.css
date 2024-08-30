@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FFFC00; /* Snapchat Yellow */
+}
+
+.snapchat-logo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ghost {
+    width: 140px;
+    height: 160px;
+    background-color: #FFF;
+    border: 10px solid #000;
+    border-radius: 50%;
+    position: relative;
+}
+
+.head {
+    width: 100px;
+    height: 100px;
+    background-color: #FFF;
+    border: 10px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.eyes {
+    width: 18px;
+    height: 18px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.body {
+    width: 80px;
+    height: 80px;
+    background-color: #FFF;
+    border: 10px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check marks M
+function checkMarks(M) {
+  if (M >= 90) {
+    console.log("Discount is 200");
+  } else if (M >= 50) {
+    console.log("Discount is 100");
+  } else {
+    console.log("No Discount");
+  }
+}
+
+// Read marks M of the student
+const M = parseInt(prompt("Enter the marks of the student (M): "));
+
+// Call the function to check and print the result
+checkMarks(M);
+
+    </script>
+</body>
+</html>

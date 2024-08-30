@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Triangle Validity</title>
+</head>
+<body>
+    <h2>Check Triangle Validity</h2>
+    <label for="angleA">Enter angle A:</label>
+    <input type="number" id="angleA" placeholder="Enter angle A">
+    <br><br>
+    <label for="angleB">Enter angle B:</label>
+    <input type="number" id="angleB" placeholder="Enter angle B">
+    <br><br>
+    <label for="angleC">Enter angle C:</label>
+    <input type="number" id="angleC" placeholder="Enter angle C">
+    <br><br>
+    <button onclick="checkTriangle()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkTriangle() {
+            var angleA = parseFloat(document.getElementById("angleA").value);
+            var angleB = parseFloat(document.getElementById("angleB").value);
+            var angleC = parseFloat(document.getElementById("angleC").value);
+            
+            var sumAngles = angleA + angleB + angleC;
+            
+            if (sumAngles === 180) {
+                document.getElementById("result").innerText = "Valid Triangle";
+            } else {
+                document.getElementById("result").innerText = "Not a Valid Triangle";
+            }
+        }
+    </script>
+</body>
+</html>

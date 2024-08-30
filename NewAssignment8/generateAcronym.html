@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Given input phrase
+let input = "Indian Administrative Service";
+
+// Function to generate and print the acronym
+function generateAcronym(input) {
+  // Split the input phrase into words
+  let words = input.split(" ");
+
+  // Initialize an empty array to store acronym letters
+  let acronym = [];
+
+  // Iterate through each word to get the first letter and convert to uppercase
+  for (let i = 0; i < words.length; i++) {
+    let firstLetter = words[i][0].toUpperCase(); // Get the first letter and convert to uppercase
+    acronym.push(firstLetter); // Push the uppercase letter to acronym array
+  }
+
+  // Join the acronym letters with dots and print
+  let acronymString = acronym.join(".");
+  console.log(acronymString);
+}
+
+// Call the function to generate and print the acronym
+generateAcronym(input);
+
+    </script>
+</body>
+</html>

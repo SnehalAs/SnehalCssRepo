@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Pass or Fail</title>
+</head>
+<body>
+    <h2>Check Pass or Fail</h2>
+    <label for="marksInput">Enter student's marks:</label>
+    <input type="number" id="marksInput" placeholder="Enter marks">
+    <button onclick="checkPassOrFail()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkPassOrFail() {
+            var marks = parseFloat(document.getElementById("marksInput").value);
+            
+            if (marks > 35) {
+                document.getElementById("result").innerText = "PASS";
+            } else {
+                document.getElementById("result").innerText = "FAIL";
+            }
+        }
+    </script>
+</body>
+</html>

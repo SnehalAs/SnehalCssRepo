@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Comparison</title>
+</head>
+<body>
+    <h2>Check if B is Greater Than A by One</h2>
+    <input type="number" id="numberA" placeholder="Enter number A" step="any">
+    <input type="number" id="numberB" placeholder="Enter number B" step="any">
+    <button onclick="compareNumbers()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function compareNumbers() {
+            var A = parseFloat(document.getElementById("numberA").value);
+            var B = parseFloat(document.getElementById("numberB").value);
+            var result = B === A + 1;
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

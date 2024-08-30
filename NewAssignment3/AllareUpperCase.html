@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to check if all characters in a string are uppercase
+function areAllUppercase(str) {
+    // Iterate through each character in the string
+    for (let i = 0; i < str.length; i++) {
+        // Check if the character is not uppercase
+        if (str[i] !== str[i].toUpperCase()) {
+            return false; // Return false if any character is not uppercase
+        }
+    }
+    return true; // Return true if all characters are uppercase
+}
+
+// Example usage with input string
+let inputString = "HELLO WORLD"; // You can change this value to test with different inputs
+
+// Call the function to check if all characters are uppercase
+let result = areAllUppercase(inputString);
+
+// Print the result as a boolean
+console.log(result);
+
+    </script>
+</body>
+</html>

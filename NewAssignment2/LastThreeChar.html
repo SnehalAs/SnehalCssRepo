@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to print the last three characters of the word N times
+function printLastThreeChars(word, N) {
+    let lastThree = word.slice(-3); // Get the last three characters of the word
+    let result = "";
+    
+    for (let i = 0; i < N; i++) {
+        result += lastThree;
+    }
+
+    console.log(result);
+}
+
+// Example usage with input values
+let word = "Transport"; // You can change this value to test with different inputs
+let N = 2; // You can change this value to test with different inputs
+
+// Call the function to print the last three characters N times
+printLastThreeChars(word, N);
+
+    </script>
+</body>
+</html>

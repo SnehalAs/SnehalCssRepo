@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to calculate the sum of even numbers from M to N
+function sumEvenNumbers(M, N) {
+    let sum = 0;
+    for (let i = M; i <= N; i++) {
+        if (i % 2 === 0) {
+            sum += i;
+        }
+    }
+    console.log(sum);
+}
+
+// Read the input numbers M and N
+let M = 2; // You can change this value to test with different inputs
+let N = 10; // You can change this value to test with different inputs
+
+// Call the function to calculate and print the sum of even numbers
+sumEvenNumbers(M, N);
+
+    </script>
+</body>
+</html>

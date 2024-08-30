@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to remove a character at a specific index from a word
+function removeCharacterAtIndex(word, index) {
+    if (index < 0 || index >= word.length) {
+        console.log("Invalid index position.");
+        return;
+    }
+
+    let result = word.slice(0, index) + word.slice(index + 1); // Concatenate parts before and after index
+
+    console.log(result);
+}
+
+// Example usage with input word and index
+let word = "Combine"; // You can change this value to test with different inputs
+let index = 4;        // You can change this value to test with different inputs
+
+// Call the function to remove character at index and print the result
+removeCharacterAtIndex(word, index);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Comparison</title>
+</head>
+<body>
+    <h2>Check if the First Number is Greater than the Second Number</h2>
+    <input type="number" id="firstNumberInput" placeholder="Enter the first number">
+    <input type="number" id="secondNumberInput" placeholder="Enter the second number">
+    <button onclick="compareNumbers()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function compareNumbers() {
+            var firstNumber = document.getElementById("firstNumberInput").value;
+            var secondNumber = document.getElementById("secondNumberInput").value;
+            var result = firstNumber > secondNumber;
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>

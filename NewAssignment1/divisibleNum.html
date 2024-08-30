@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to print numbers from 1 to N that are divisible by T
+function printDivisibleNumbers(N, T) {
+    for (let i = 1; i <= N; i++) {
+        if (i % T === 0) {
+            console.log(i);
+        }
+    }
+}
+
+// Read the input numbers N and T
+let N = 20; // You can change this value to test with different inputs
+let T = 5;  // You can change this value to test with different inputs
+
+// Call the function to print numbers divisible by T
+printDivisibleNumbers(N, T);
+
+    </script>
+</body>
+</html>

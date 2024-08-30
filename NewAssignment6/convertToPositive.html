@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert Number to Positive</title>
+</head>
+<body>
+    <h2>Convert Number to Positive</h2>
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="convertToPositive()">Convert</button>
+    <p id="result"></p>
+
+    <script>
+        function convertToPositive() {
+            var number = parseFloat(document.getElementById("numberInput").value);
+            
+            if (number < 0) {
+                number = -number; // Convert negative number to positive
+            }
+            
+            document.getElementById("result").innerText = number;
+        }
+    </script>
+</body>
+</html>

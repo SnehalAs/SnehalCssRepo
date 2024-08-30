@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=10;
+        let b=56;
+        document.write("first Method");
+        a=a+b;     // a=10+56 ==66;
+        b=a-b;     // b=66-56 ==10;
+        a=a-b;     // a=66-10 ==56;
+        document.write("</br>");
+        document.write("Value of a===" + a);
+        document.write("</br>");
+        document.write("Value of b=== " + b);
+
+        document.write("</br>");
+        document.write("</br>");
+        
+        let c=1;
+        let d=2;
+        document.write("Second Method");
+        c=c^d;     // a=10+56 ==66;
+        d=c-d;     // b=66-56 ==10;
+        c=c-d;     // a=66-10 ==56;
+        document.write("</br>");
+        document.write("Value of c===" + c);
+        document.write("</br>");
+        document.write("Value of d=== " + d);
+
+        document.write("</br>");
+        document.write("</br>");
+        let e=6;
+        let f=5;
+        document.write("Third Method");
+        e=f+(f=e,0); //a=b+0
+        document.write("</br>");
+        document.write("Value of e===" + e);
+        document.write("</br>");
+        document.write("Value of f=== " + f);
+
+
+        document.write("</br>");
+        document.write("</br>");
+        let g=8;
+        let h=2;
+        document.write("fourth Method");
+       [g,h]=[h,g];
+        document.write("</br>");
+        document.write("Value of g===" + g);
+        document.write("</br>");
+        document.write("Value of h=== " + h);
+
+
+        document.write("</br>");
+        document.write("</br>");
+        let i=9;
+        let j=3;
+        document.write("fifth Method");
+         i=(i*j)/(j=i)
+        document.write("</br>");
+        document.write("Value of i===" + i);
+        document.write("</br>");
+        document.write("Value of j=== " + j);
+    </script>
+</body>
+</html>

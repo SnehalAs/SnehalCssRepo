@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let str = "Snehal";
+      // document.write(str.length);
+      // document.write("</br>");
+      // document.write(str.toString());
+      // document.write("</br>");
+      // document.write(str.charAt(2));
+      // document.write("</br>");
+      // let str1 ="Youtube Snehal  Tutorials youtube";
+      // let res=str1.match(/you/gi);
+      // document.write(res);
+      // document.write("</br>");
+
+      // let patt1=/[y]/gi;
+      // let result=str1.match(patt1);
+      // document.write(result);
+
+      // document.write("</br>");
+
+      // let patt= /[^y]/gi;
+      // let result1=str1.match(patt);
+      // document.write(result1);
+      // document.write("</br>");
+      // let st="Snehu Tutorials";
+      // let r=st.replace("Snehu","Snehal")
+      // document.write(r);
+
+//1
+    //   function countVowels(s) {
+    //     VowelsCo = 0;
+    //     let string = s.toString();
+    //     for (let i = 0; i <= string.length - 1; i++) {
+    //       if (
+    //         string.charAt(i) == "a" ||
+    //         string.charAt(i) == "e" ||
+    //         string.charAt(i) == "i" ||
+    //         string.charAt(i) == "o" ||
+    //         string.charAt(i) == "u"
+    //       )
+    //       VowelsCo+=1;
+    //     }
+    //     return VowelsCo;
+    //   }
+    //   document.write(countVowels("qwertyuiopasdfghjklzxcvbnm"));
+    //   document.write("</br>");
+    //   document.write(countVowels("Snehal"));
+
+    //2
+
+    // function countVowels(s){
+    //     let m=s.match(/[aeiou]/ig);
+    //     return m=== null ? 0 : m.length;
+    // }
+    //   document.write(countVowels("qwertyuiopasdfghjklzxcvbnm"));
+    //    document.write("</br>");
+    //    document.write(countVowels("Snehal"));
+
+
+    //3
+
+     const countVowels= s => s.replace(/[^aeiou]/gi,"").length;
+     document.write(countVowels("qwertyuiopasdfghjklzxcvbnm"));
+      document.write("</br>");
+       document.write(countVowels("Snehal"));
+
+     </script>
+  </body>
+</html>

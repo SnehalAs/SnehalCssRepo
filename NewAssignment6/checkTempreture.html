@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check Temperature for Walk</title>
+</head>
+<body>
+    <h2>Check Temperature for Walk</h2>
+    <label for="temperatureInput">Enter temperature:</label>
+    <input type="number" id="temperatureInput" placeholder="Enter temperature">
+    <br><br>
+    <button onclick="checkTemperature()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function checkTemperature() {
+            var temperature = parseFloat(document.getElementById("temperatureInput").value);
+            
+            if (temperature > 15 && temperature < 40) {
+                document.getElementById("result").innerText = "Can go for a walk";
+            } else {
+                document.getElementById("result").innerText = "Cannot go for a walk";
+            }
+        }
+    </script>
+</body>
+</html>

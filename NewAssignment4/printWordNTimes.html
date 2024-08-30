@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printWordNTimes(word, N) {
+    let result = '';
+    for (let i = 0; i < N; i++) {
+        result += word;
+        if (i < N - 1) {
+            result += ' ';
+        }
+    }
+    console.log(result);
+}
+
+// Example usage:
+let word = "hello"; // You can change this word for testing
+let N = 30; // You can change this value for testing
+printWordNTimes(word, N);
+
+    </script>
+</body>
+</html>

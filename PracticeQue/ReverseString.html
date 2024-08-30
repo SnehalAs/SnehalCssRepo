@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+        // let str="Hello World";
+        // let l=str.length;
+        // document.write(l);
+        // document.write("</br>")
+        // let str1="snehal";
+        // let s=str1.split("");
+        // document.write(s);
+        // document.write("</br>")
+        // let r=s.reverse();
+        // document.write(r);
+        // document.write("</br>");
+        // let j=r.join("");
+        // document.write(j);
+        // document.write("</br>")
+        // for(let i=10; i>0; i--){
+        //     document.write(i + "</br>");
+        // }
+
+        //1
+        function reverseString(str){
+            let splitString=str.split("");
+            let r=splitString.reverse();
+            let j=r.join("");
+            return j;
+        }
+        document.write(reverseString("Snehal"));
+
+        //2
+        document.write("</br>")
+        function reverseStr(str){
+            let newString=" ";
+            for(let i=str.length-1;i>=0;i--){
+                newString+=str[i];
+            }
+            return newString;
+        }
+        document.write(reverseStr("Snehal"))
+
+
+        //3
+        document.write("</br>")
+        const reverse=(String) =>
+        String.split("").reverse().join("");
+        document.write(reverse("Snehal"));
+
+        //4
+        document.write("</br>")
+        const str='Snehal World';
+        const re=[...str].reverse().join("");
+        document.write(re);
+    </script>
+</body>
+</html>

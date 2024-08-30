@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Comparison</title>
+</head>
+<body>
+    <h2>Check if Two Words are the Same</h2>
+    <input type="text" id="firstWordInput" placeholder="Enter the first word">
+    <input type="text" id="secondWordInput" placeholder="Enter the second word">
+    <button onclick="compareWords()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        function compareWords() {
+            var firstWord = document.getElementById("firstWordInput").value;
+            var secondWord = document.getElementById("secondWordInput").value;
+            var result = firstWord === secondWord;
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>
